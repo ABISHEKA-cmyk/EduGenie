@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduGenie</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        🎓 EduGenie
+    </div>
+
+    <div class="tagline">
+        Learn Smarter with AI
+    </div>
+
+</header>
+
+
+<main class="container">
+
+    <section class="hero">
+
+        <div class="hero-icon">
+            🎓
+        </div>
+
+        <h1>
+            Learn Anything with <span>EduGenie</span>
+        </h1>
+
+        <p>
+            Your simple AI-powered learning assistant
+            for studying, explanations, quizzes and more.
+        </p>
+
+    </section>
+
+
+    <section class="cards">
+
+
+        <!-- ASK AI -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                💬
+            </div>
+
+            <h2>Ask AI</h2>
+
+            <p>
+                Ask any educational question and
+                get a simple answer.
+            </p>
+
+            <form action="/ask" method="post">
+
+                <textarea
+                    name="question"
+                    placeholder="Example: What is Artificial Intelligence?"
+                    required></textarea>
+
+                <button type="submit">
+                    Ask EduGenie →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- EXPLAIN -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                📚
+            </div>
+
+            <h2>Explain Topic</h2>
+
+            <p>
+                Understand any topic with
+                simple explanations.
+            </p>
+
+            <form action="/explain" method="post">
+
+                <input
+                    type="text"
+                    name="topic"
+                    placeholder="Example: Photosynthesis"
+                    required>
+
+                <button type="submit">
+                    Explain Topic →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- QUIZ -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                📝
+            </div>
+
+            <h2>Generate Quiz</h2>
+
+            <p>
+                Test your knowledge with
+                AI-generated questions.
+            </p>
+
+            <form action="/quiz" method="post">
+
+                <input
+                    type="text"
+                    name="topic"
+                    placeholder="Example: Python"
+                    required>
+
+                <input
+                    type="number"
+                    name="number"
+                    value="5"
+                    min="1"
+                    max="20">
+
+                <button type="submit">
+                    Generate Quiz →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- LEARNING PATH -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                🗺️
+            </div>
+
+            <h2>Learning Path</h2>
+
+            <p>
+                Get a step-by-step roadmap
+                to learn any topic.
+            </p>
+
+            <form action="/learning-path" method="post">
+
+                <input
+                    type="text"
+                    name="topic"
+                    placeholder="Example: Python"
+                    required>
+
+                <button type="submit">
+                    Create Path →
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- SUMMARY -->
+
+        <div class="card">
+
+            <div class="card-icon">
+                📄
+            </div>
+
+            <h2>Summarize</h2>
+
+            <p>
+                Convert long study material
+                into simple notes.
+            </p>
+
+            <form action="/summarize" method="post">
+
+                <textarea
+                    name="text"
+                    placeholder="Paste your study text here..."
+                    required></textarea>
+
+                <button type="submit">
+                    Summarize →
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>🎓 EduGenie</p>
+
+    <span>Learn • Practice • Improve</span>
+
+</footer>
+
+</body>
+
+</html>
